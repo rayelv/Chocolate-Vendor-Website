@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            
+        />
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md" style="background-color: rgba(72, 5, 5, 0.615);"> 
+                <div class="container">
+                    <a href ="#" class="navbar-brand">
+                        <span class="fw-bold">KOKO's Bakery</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-none d-md-inline"><a class="nav-link active link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#contact">Contact</a></li>
+                            <li class="nav-item d-md-none">
+                                <a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#order">Create an account</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline">
+                                <a class="btn btn-secondary" href="#order">Order Now </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container-fluid">
+            <img src="images/macaroons.jpg" class="img-fluid my-3" alt="Koko Samoa Chocolate Cake">
+            <h1 class="text-center text-capitalize p-5">Endulge in rich chocolate desserts with a taste from the islands of samoa</h1>
+            <div class="d-flex justify-content-around align-items-center" style="height: 300px;">
+                 <img src="images/cake.jpg" class="rounded-circle"  style= "width:200px; height: 200px">
+                 <img src="images/lava-cake.jpg" class="rounded-circle"  style= "width:200px; height: 200px">
+                 <img src="images/icecream.jpg" class="rounded-circle"  style= "width:200px; height: 200px">
+                 <img src="images/brownies.jpg" class="rounded-circle" style="width: 200px; height: 200px">
+            </div>
+            <hr>
+            <section id="order">
+                <p class="text-center text-muted fs-3 my-4"> Create an account to place special orders:</p>
+                <div class="container text-center">
+                    <form class="needs validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="firstname" class="form-label">First</label>
+                                    <input type="text" class="form-control" id="firstname" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="lastname" class="form-label">Last</label>
+                                        <input type="text" class="form-control" id="lastname" required>
+                                    </div>
+                            </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email1" class="form-label">Email</label>
+                                    <input type="email" class="form-control is-invalid" id="email1" placeholder="Enter your email" required>
+                                    <div class="invalid-feedback">Please enter a valid email</div>                            
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password1" class="form-label">Password</label>
+                                    <input type="password" class="form-control is-invalid" id="password1"  placeholder="Please enter your password" required>
+                                    <div class="invalid-feedback">Cannot be empty. Create a unique password.</div>
+                                    <div class="form-text">Please do not put ABC123 🥴</div>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                <label class="form-check-label" for="terms"> I agree to terms and conditions</label>
+                            </div>
+                            <button type="submit" class="btn btn-success mb-4">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <hr>
+            <section id="about" class="container">
+                <h3 class="fw-bold py-3 text-center">About Us</h3>
+                <p class="text-center fs-3 pb-5 lh-base"> 
+                    At KOKO's Bakery, we’ve been crafting indulgent chocolate delights for over 10 years, 
+                    blending tradition with innovation. Specializing in desserts made with <span class="fw-bold">KOKO Samoa</span> — the rich, authentic cacao from Samoa —
+                     we take pride in creating unique flavors that celebrate our heritage. Each treat is handcrafted with premium ingredients, offering a taste of the Pacific
+                     in every bite. Whether it's our signature chocolate bars, decadent cakes, or gourmet truffles, we are passionate about delivering quality and flavor that
+                     connects people to culture and community.</p>
+            </section>
+            <h3 class="p-4 text-center"><span class="border-bottom border-black">Popular Items</span></h3>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered align-middle mt-3">
+                  <thead class=" table table-danger">
+                    <tr>
+                      <th scope="col">Product Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Weight</th>
+                      <th scope="col">Availability</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Koko Samoa Truffle</td>
+                      <td>Rich dark chocolate with Koko Samoa filling</td>
+                      <td>$5</td>
+                      <td>50g</td>
+                      <td><span class="badge bg-success">In stock</span>
+                    </tr>
+                    <tr>
+                      <td>Koko Samoa Hot Chocolate</td>
+                      <td>Creamy hot chocolate blend with Koko Samoa</td>
+                      <td>$8</td>
+                      <td>250g</td>
+                      <td><span class="badge bg-danger">Out of Stock</span></td>
+                    </tr>
+                    <tr>
+                        <td>Koko Samoa Brownie</td>
+                        <td>Fudgy brownies infused with Koko Samoa</td>
+                        <td>$4</td>
+                        <td>100g</td>
+                        <td><span class="badge bg-success">In Stock</span></td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+              <section id="contact">
+                <h3 class="fw-bold py-3 text-center"> Contact us at:</h3>
+                <p class="text-center fs-3"> 📞907-784-7945</p>
+                <p class="text-center fs-3">📧koko@kokosbakery.com</p>
+              </section>
+              
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
