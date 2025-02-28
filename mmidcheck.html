@@ -20,25 +20,31 @@
 
     <body>
         <header>
+            <!-- Navbar styling -->
+             <!-- Navbar expands on medium and larger screens but compacts on smaller screens -->
             <nav class="navbar navbar-expand-md" style="background-color: rgba(72, 5, 5, 0.615);"> 
                 <div class="container">
                     <a href ="#" class="navbar-brand">
                         <span class="fw-bold">KOKO's Bakery</span>
                     </a>
+                    <!-- navbar toggler for smaller screens -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
                     aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- Button toggler is implemened to the list and links for smaller screens -->
                     <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                         <ul class="navbar-nav">
                             <li class="nav-item d-none d-md-inline"><a class="nav-link active link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#home">Home</a></li>
                             <li class="nav-item"><a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#about">About</a></li>
                             <li class="nav-item"><a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#contact">Contact</a></li>
                             <li class="nav-item d-md-none">
+                                <!-- This link will only show up on smaller screens -->
                                 <a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#order">Create an account</a>
                             </li>
                             <li class="nav-item d-none d-md-inline">
+                                <!-- button will show up on md and larger screens -->
                                 <a class="btn btn-secondary" href="#order">Order Now </a>
                             </li>
                         </ul>
@@ -46,9 +52,12 @@
                 </div>
             </nav>
         </header>
+        <!-- Image section -->
         <main class="container-fluid">
+            <!-- Using a landscape photo is better, visually -->
             <img src="images/macaroons.jpg" class="img-fluid my-3" alt="Koko Samoa Chocolate Cake">
             <h1 class="text-center text-capitalize p-5">Endulge in rich chocolate desserts with a taste from the islands of samoa</h1>
+            <!-- Rounded images used flex to position the images uniformly -->
             <div class="d-flex justify-content-around align-items-center" style="height: 300px;">
                  <img src="images/cake.jpg" class="rounded-circle"  style= "width:200px; height: 200px">
                  <img src="images/lava-cake.jpg" class="rounded-circle"  style= "width:200px; height: 200px">
@@ -56,10 +65,13 @@
                  <img src="images/brownies.jpg" class="rounded-circle" style="width: 200px; height: 200px">
             </div>
             <hr>
+            <!-- Form Section -->
             <section id="order">
                 <p class="text-center text-muted fs-3 my-4"> Create an account to place special orders:</p>
                 <div class="container text-center">
+                    <!-- Bootstrap validation inputed  -->
                     <form class="needs validation" novalidate>
+                        <!-- Grid-layout for First and Last name, so they are positioned side by side on md to larger screens -->
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
@@ -73,7 +85,7 @@
                                         <input type="text" class="form-control" id="lastname" required>
                                     </div>
                             </div>
-                                
+                                <!-- Use of is-invalid and invalid-feedback for email and password -->
                                 <div class="mb-3">
                                     <label for="email1" class="form-label">Email</label>
                                     <input type="email" class="form-control is-invalid" id="email1" placeholder="Enter your email" required>
@@ -95,6 +107,7 @@
                 </div>
             </section>
             <hr>
+            <!-- About Us section -->
             <section id="about" class="container">
                 <h3 class="fw-bold py-3 text-center">About Us</h3>
                 <p class="text-center fs-3 pb-5 lh-base"> 
@@ -104,6 +117,7 @@
                      in every bite. Whether it's our signature chocolate bars, decadent cakes, or gourmet truffles, we are passionate about delivering quality and flavor that
                      connects people to culture and community.</p>
             </section>
+            <!-- Table  -->
             <h3 class="p-4 text-center"><span class="border-bottom border-black">Popular Items</span></h3>
             <div class="table-responsive">
                 <table class="table table-striped table-hover table-bordered align-middle mt-3">
@@ -150,7 +164,7 @@
               
         </main>
         <footer>
-            <!-- place footer here -->
+            <p class="text-center border-black fw-bold"> <span class="border border-black d-block p-2 my-5">&copyKOKO's Bakery established in 2015</span> </p>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
